@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Mega Parts Auto</title>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+	<link href="./modal.css" rel="stylesheet" />
 	<link href="./style.css" rel="stylesheet" />
 </head>
 
@@ -67,33 +68,56 @@
 	</section>
 
 	<section id="section3" class="section3">
-		<h2>Galerie</h2>
-		<div>
-			<img src="./gallery/gallery-1.png" alt="Imagine masina">
-			<img src="./gallery/gallery-2.png" alt="Imagine masina">
-			<img src="./gallery/gallery-3.png" alt="Imagine masina">
-			<img src="./gallery/gallery-4.png" alt="Imagine masina">
-			<img src="./gallery/gallery-5.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-6.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-7.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-8.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-9.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-10.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-11.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-12.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-13.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-14.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-15.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-16.png" alt="Imagine masina">
-			<img src="./gallery/gallery-17.png" alt="Imagine masina">
-			<img src="./gallery/gallery-18.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-19.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-20.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-21.jpeg" alt="Imagine masina">
-			<img src="./gallery/gallery-22.jpg" alt="Imagine masina">
-			<img src="./gallery/gallery-23.jpg" alt="Imagine masina">
-			<img src="./gallery/gallery-24.jpeg" alt="Imagine masina">
+		<div class="title-and-description">
+			<h1 class="section2-header">Galerie</h2>
+			<p>Câteva poze realizate din <span class="highlight">sutele</span>, de lucrări pe care le-am dus la capăt cu succes</p>
 		</div>
+
+		<div class="galery">
+			<div id="bulk-navigate-left" class="navigator">&lt;</div>
+
+			<div>
+				<div class="bulk visible">
+					<div><img src="./gallery/gallery-1.png" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-2.png" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-3.png" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-4.png" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-5.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-6.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-7.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-8.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-9.jpeg" alt="Imagine masina"></div>
+				</div>
+			
+				<div class="bulk">
+					<div><img src="./gallery/gallery-10.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-11.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-12.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-13.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-14.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-15.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-16.png" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-17.png" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-18.jpeg" alt="Imagine masina"></div>
+				</div>
+			
+				<div class="bulk">
+					<div><img src="./gallery/gallery-19.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-20.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-21.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-22.jpg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-23.jpg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-24.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-25.jpg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-26.jpeg" alt="Imagine masina"></div>
+					<div><img src="./gallery/gallery-27.jpg" alt="Imagine masina"></div>
+				</div>
+			</div>
+			  
+
+			<div id="bulk-navigate-right" class="navigator">&gt;</div>
+		</div>
+		
 	</section>
 
 	<section id="section4" class="section4">
@@ -123,6 +147,11 @@
 		</div>
 	</section>
 
+	<div id="image-modal" class="modal">
+		<span id="modal-close" class="modal-close">&times;</span>
+		<img class="modal-content" id="modal-img" alt="Expanded image">
+	</div>
+  
 	<script>
 		const burger = document.getElementById('burger-menu');
 		const navLinks = document.getElementById('nav-links');
@@ -133,7 +162,8 @@
 	</script>
 	  
 	<script src="./section1-fadeout.js"></script>
-	<!-- <script src="./car-on-scroll.js"></script> -->
+	<script src="./image-slideshow.js"></script>
+	<script src="./image-modal.js"></script>
 </body>
 
 </html>
