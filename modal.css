@@ -17,7 +17,7 @@
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 90%;
+    max-width: 100%;
     max-height: 80vh;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -36,4 +36,40 @@
 
 .modal-close:hover {
     color: #bbb;
+}
+
+.modal-image-container {
+    position: relative;
+    width: fit-content;
+}
+
+.modal
+
+.expanded-navigator {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.423);
+    border-radius: 200px;
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.expanded-navigator:hover {
+    background: rgba(255, 255, 255, 0.896);
+}
+
+.expanded-navigator-left {
+    left: 20px;
+    z-index: 9999;
+}
+
+.expanded-navigator-right {
+    right: 20px;
+    z-index: 9999;
 }
