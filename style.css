@@ -21,6 +21,13 @@ nav {
     height: 60px;
 }
 
+.nav-img {
+    width: 80px;
+}
+.nav-img img {
+    width: 100%;
+}
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
