@@ -419,3 +419,7 @@ ul.service-list li::before {
         left: -200px;
     }
 }
+
+section:not(#section1) {
+    padding-top: 4rem;
+}
