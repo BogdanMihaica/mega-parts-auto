@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.9);
@@ -59,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00a8e8;
+    color: #cd4444;
 }
 
 /* Butonul burger, poziționat fix în dreapta navbar-ului */
@@ -146,7 +146,7 @@ section {
 
 @media (max-width: 585px) {
     .section1 h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem;
         color: #111;
     }
@@ -393,6 +393,21 @@ ul.service-list li::before {
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.contact-link {
+    color: rgb(243, 11, 11);
+    text-decoration: none;
+    
+}
+
+#section5 p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section5 {
+    background: rgb(224, 224, 224);
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(223, 223, 223) 100%);
 }
 
 @keyframes car-drive {
